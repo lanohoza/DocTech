@@ -38,3 +38,12 @@ Just Import Collection "WebAPI_Test.postman_collection" into postman (for this s
 # Step 3 HopTech_Frontend:
 - Run "undex.html" page from the "HopTech" project on the Browser 
 - Follow the next steps:
+1.Doctor choose the name of hospital (if doctor is logout or new),automated show services list to choose his service where he work
+2.Doctor make login with his username and password (if doctor enter wrong informations, a message appear to know him or for signup else home page appear)
+3.Home page contain Liste of medicale reports with their numbers and three buttons witch are:
+3.1.Button1(Show report): will show informations of this report
+3.1.Button2(Add report): 
+To add report you must to :
+  1.Choose a patient from Dropdown list if exist, if not Doctor shoud enter all informations of new patient then continue enter informations of consultation:
+  Diagnostic; Amount; Also choose the drags list prescriped 
+4.For extract report medicale for this patient comme file txt  
