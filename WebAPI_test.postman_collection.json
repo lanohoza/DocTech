@@ -1,0 +1,693 @@
+{
+	"info": {
+		"_postman_id": "bf749e0f-f3de-4b61-bb17-9fc65f49b887",
+		"name": "WebAPI_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/médicale/departement/read.php?Name=Ben Flis Touhami, Batna",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/hopital/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"hopital",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/departement/SelectDep.php?NameD=Cardiology",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/departement/SelectDep.php?NameD=Cardiology",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"departement",
+						"SelectDep.php"
+					],
+					"query": [
+						{
+							"key": "NameD",
+							"value": "Cardiology"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/user/create.php?FullName=GAla&Mobile_N=0645345243&Age=26&Adresse=Cite 08&User_Role=D&Groupage=O+",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Mobile_N\":\"673565993\",\r\n\"Sexe\":\"F\",\r\n\"Adresse\":\"cité 300\",\r\n\"Age\":\"25\",\r\n\"Groupage\":\"O+\",\r\n\"User_Role\":\"D\",\r\n\"FullName\":\"Mama\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/user/create.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"user",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "GAla",
+							"disabled": true
+						},
+						{
+							"key": "Mobile_N",
+							"value": "0645345243",
+							"disabled": true
+						},
+						{
+							"key": "Age",
+							"value": "26",
+							"disabled": true
+						},
+						{
+							"key": "Adresse",
+							"value": "Cite 08",
+							"disabled": true
+						},
+						{
+							"key": "User_Role",
+							"value": "D",
+							"disabled": true
+						},
+						{
+							"key": "Groupage",
+							"value": "O+",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/patient/create.php?FullName=Nour&Age=25&Mobile_N=0673565993&Sexe=F&Groupage=O+&Adresse=Cité 300",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "C",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"FullName\": \"Nour lachraf\",\r\n            \"Mobile_N\": \"0673565993\",\r\n            \"Sexe\": \"F\",\r\n            \"Adresse\": \"cité 300\",\r\n            \"Age\": \"25\",\r\n            \"Groupage\": \"O+\"\r\n        }"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/patient/create.php?FullName=Nour&Age=25&Mobile_N=0673565993&Sexe=F&Groupage=O+&Adresse=Cité 300",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"patient",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "Nour"
+						},
+						{
+							"key": "Age",
+							"value": "25"
+						},
+						{
+							"key": "Mobile_N",
+							"value": "0673565993"
+						},
+						{
+							"key": "Sexe",
+							"value": "F"
+						},
+						{
+							"key": "Groupage",
+							"value": "O+"
+						},
+						{
+							"key": "Adresse",
+							"value": "Cité 300"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/patient/selectP.php?FullName=Miro",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/médicale/patient/selectP.php?FullName=Miro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"patient",
+						"selectP.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "Miro"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/user/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/user/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"user",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/doctor/Signup.php?FullName=Sahar Aggab&Age=26&Mobile_N=0673565987&Sexe=F&Groupage=O-&Adresse=Cite 8 mai&Name=Chat,El-Oued&NameD=Cardiology&password=pass&Username=Sahoura",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"FullName\": \"Mohammed\",\r\n            \"Mobile_N\": \"0673565987\",\r\n            \"Sexe\": \"M\",\r\n            \"Adresse\": \"cite 8mai\",\r\n            \"Age\": \"26\",\r\n            \"Groupage\": \"O-\",\r\n            \"Name\":\"Chat-El-Oued\",\r\n            \"NameD\":\"Cardiology\",\r\n            \"Username\":\"Mohammed\",\r\n            \"password\":\"123\",\r\n            \"TimeB\":\"07:30\",\r\n            \"TimeC\":\"15:30\"\r\n            \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/doctor/Signup.php?FullName=Sahar Aggab&Age=26&Mobile_N=0673565987&Sexe=F&Groupage=O-&Adresse=Cite 8 mai&Name=Chat,El-Oued&NameD=Cardiology&password=pass&Username=Sahoura&TimeB=07:30&TimeC=15:30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"doctor",
+						"Signup.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "Sahar Aggab"
+						},
+						{
+							"key": "Age",
+							"value": "26"
+						},
+						{
+							"key": "Mobile_N",
+							"value": "0673565987"
+						},
+						{
+							"key": "Sexe",
+							"value": "F"
+						},
+						{
+							"key": "Groupage",
+							"value": "O-"
+						},
+						{
+							"key": "Adresse",
+							"value": "Cite 8 mai"
+						},
+						{
+							"key": "Name",
+							"value": "Chat,El-Oued"
+						},
+						{
+							"key": "NameD",
+							"value": "Cardiology"
+						},
+						{
+							"key": "password",
+							"value": "pass"
+						},
+						{
+							"key": "Username",
+							"value": "Sahoura"
+						},
+						{
+							"key": "TimeB",
+							"value": "07:30"
+						},
+						{
+							"key": "TimeC",
+							"value": "15:30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/doctor/login.php?Username=Sah&password=123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/doctor/login.php?Username=Sah&password=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"doctor",
+						"login.php"
+					],
+					"query": [
+						{
+							"key": "Username",
+							"value": "Sah"
+						},
+						{
+							"key": "password",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/doctor/readOne.php?idDoctor=14",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/doctor/readOne.php?idDoctor=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"doctor",
+						"readOne.php"
+					],
+					"query": [
+						{
+							"key": "idDoctor",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/hopital/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/hopital/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"hopital",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/hopital/getIdH.php?Name=Ben Flis Touhami, Batna",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/hopital/getIdH.php?Name=Ben Flis Touhami, Batna",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"hopital",
+						"getIdH.php"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "Ben Flis Touhami, Batna"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/medicament/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/medicament/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"medicament",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/patient/readOne.php?idP=48",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/patient/readOne.php?idP=48",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"patient",
+						"readOne.php"
+					],
+					"query": [
+						{
+							"key": "idP",
+							"value": "48"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/patient/selectP.php?FullName=jojo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FullName\":\"Miro\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/patient/selectP.php?FullName=jojo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"patient",
+						"selectP.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "jojo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/medicament/SelectMbyN.php?Name=Doliprane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/medicament/SelectMbyN.php?NameM=Doliprane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"medicament",
+						"SelectMbyN.php"
+					],
+					"query": [
+						{
+							"key": "NameM",
+							"value": "Doliprane"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/consultation/create.php?FullName=jojo&Username=Sah&Diagnostic=fièvre&Mount=1500",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FullName\":\"jojo\",\r\n    \"Username\":\"Sah\",\r\n    \"Diagnostic\":\"Fièvre\",\r\n    \"Mount\":\"1500\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/consultation/create.php?FullName=jojo&Username=Sah&Diagnostic=fièvre&Mount=1500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"consultation",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "jojo"
+						},
+						{
+							"key": "Username",
+							"value": "Sah"
+						},
+						{
+							"key": "Diagnostic",
+							"value": "fièvre"
+						},
+						{
+							"key": "Mount",
+							"value": "1500"
+						},
+						{
+							"key": "Appoint",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/medicament/create.php?NameM=Flucanazol",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/medicament/create.php?NameM=Flucanazol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"medicament",
+						"create.php"
+					],
+					"query": [
+						{
+							"key": "NameM",
+							"value": "Flucanazol"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/raport/createR.php?FullName=jojo&Username=Sah&Mount=2442&Diagnostic=Corona&NameM=Doliprane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"FullName\":\"jojo\",\r\n    \"Username\":\"Sah\",\r\n    \"Diagnostic\":\"Corona\",\r\n    \"Mount\":\"2314\",\r\n    \"NameM\":\"Flucanazol\"\r\n    \r\n    \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/médicale/raport/createR.php?FullName=jojo&Username=Sah&Mount=2442&Diagnostic=Corona&NameM=Doliprane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"raport",
+						"createR.php"
+					],
+					"query": [
+						{
+							"key": "FullName",
+							"value": "jojo"
+						},
+						{
+							"key": "Username",
+							"value": "Sah"
+						},
+						{
+							"key": "Mount",
+							"value": "2442"
+						},
+						{
+							"key": "Diagnostic",
+							"value": "Corona"
+						},
+						{
+							"key": "NameM",
+							"value": "Doliprane"
+						},
+						{
+							"key": "NameM",
+							"value": "Flucanazol",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/raport/readOne.php?Consultation_idC=6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/raport/readOne.php?Consultation_idC=78",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"raport",
+						"readOne.php"
+					],
+					"query": [
+						{
+							"key": "Consultation_idC",
+							"value": "78"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/raport/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/raport/read.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"raport",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/médicale/raport/delete.php?Consultation_idC=77",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/médicale/raport/delete.php?Consultation_idC=77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"médicale",
+						"raport",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "Consultation_idC",
+							"value": "77"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
