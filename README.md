@@ -5,7 +5,7 @@ DocTech is a web application directed to doctors and hospitals to provide the se
 
 # Getting Started
 # Tree (Mind_Map):
-![GitHub Logo](C:\Users\amirl\Pictures\Diagram.png)
+![Diagram](https://user-images.githubusercontent.com/46310934/121714609-ec864780-cad5-11eb-9274-5296779a1c75.png)
 Format: ![Alt Text](url)
 =============================================
 # Tools:
