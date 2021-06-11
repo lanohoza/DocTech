@@ -46,4 +46,4 @@ Just Import Collection "WebAPI_Test.postman_collection" into postman (for this s
 To add report you must to :
   1.Choose a patient from Dropdown list if exist, if not Doctor shoud enter all informations of new patient then continue enter informations of consultation:
   Diagnostic; Amount; Also choose the drags list prescriped 
-4.For extract report medicale for this patient comme file txt  
+4.For extract report medicale for this patient comme file txt just click button on Save
